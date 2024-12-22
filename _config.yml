@@ -1,6 +1,7 @@
-title: Yipeng Zou's Homepage
+title: Yipeng Zou
 logo: /assets/img/my.jpg
-description: I'm Yipeng Zou
-show_downloads: false
+description:
+show_downloads: False
+show_links: True
 google_analytics:
 theme: jekyll-theme-minimal

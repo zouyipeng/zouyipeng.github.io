@@ -2,4 +2,23 @@
 layout: default
 ---
 
-My name is Zou Yipeng. I am engaged in OS kernel development and embedded development.
+# Personal Profile
+
+SDE, OS Kernel and Embedded Development.
+
+<!-- # Work Experience
+
+- SDE 2018 ~ Now
+
+# Educational Background
+
+- Master's degree in Computer Science
+
+# Professional Skills
+
+- C
+- Linux
+
+# Certificates and Honors
+
+- NA -->
