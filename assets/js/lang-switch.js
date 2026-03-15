@@ -15,11 +15,21 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     if (lang === 'zh') {
-      zhElements.forEach(el => el.style.display = '');
+      zhElements.forEach(el => {
+        el.style.display = 'block';
+        if (el.classList.contains('projects-section')) {
+          el.style.display = '';
+        }
+      });
       enElements.forEach(el => el.style.display = 'none');
     } else {
       zhElements.forEach(el => el.style.display = 'none');
-      enElements.forEach(el => el.style.display = '');
+      enElements.forEach(el => {
+        el.style.display = 'block';
+        if (el.classList.contains('projects-section')) {
+          el.style.display = '';
+        }
+      });
     }
   }
 

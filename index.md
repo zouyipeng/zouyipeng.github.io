@@ -6,17 +6,9 @@ layout: default
 # 个人简介
 
 SDE，操作系统内核与嵌入式开发。
-</div>
-
-<div class="lang-en">
-# Personal Profile
-
-SDE, OS Kernel and Embedded Development.
-</div>
 
 ---
 
-<div class="lang-zh">
 ## 工作经历
 
 ### 2022 ~ 至今
@@ -32,9 +24,31 @@ SDE, OS Kernel and Embedded Development.
 - 开发 ARM 微控制器设备驱动程序
 - 在自定义 RTOS 中实现实时任务调度
 - 维护和调试现有固件代码库
+
+---
+
+## 教育背景
+
+### 2016 ~ 2018
+**计算机科学硕士** | [大学名称]
+
+论文："资源受限环境中的高效内存管理"
+
+### 2012 ~ 2016
+**计算机科学学士** | [大学名称]
+
+---
+
+## 精选项目
 </div>
 
 <div class="lang-en">
+# Personal Profile
+
+SDE, OS Kernel and Embedded Development.
+
+---
+
 ## Professional Experience
 
 ### 2022 ~ Present
@@ -50,23 +64,9 @@ SDE, OS Kernel and Embedded Development.
 - Developed device drivers for ARM-based microcontrollers
 - Implemented real-time task scheduling in custom RTOS
 - Maintained and debugged existing firmware codebase
-</div>
 
 ---
 
-<div class="lang-zh">
-## 教育背景
-
-### 2016 ~ 2018
-**计算机科学硕士** | [大学名称]
-
-论文："资源受限环境中的高效内存管理"
-
-### 2012 ~ 2016
-**计算机科学学士** | [大学名称]
-</div>
-
-<div class="lang-en">
 ## Educational Background
 
 ### 2016 ~ 2018
@@ -76,15 +76,9 @@ Thesis: "Efficient Memory Management in Resource-Constrained Environments"
 
 ### 2012 ~ 2016
 **Bachelor of Science in Computer Science** | [University Name]
-</div>
 
 ---
 
-<div class="lang-zh">
-## 精选项目
-</div>
-
-<div class="lang-en">
 ## Featured Projects
 </div>
 

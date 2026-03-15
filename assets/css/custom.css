@@ -32,6 +32,10 @@
   display: none;
 }
 
+.lang-zh {
+  display: block;
+}
+
 /* Social Icons */
 .social-icons {
   margin-top: 15px;
