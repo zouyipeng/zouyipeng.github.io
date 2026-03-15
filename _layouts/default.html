@@ -54,6 +54,13 @@
       </header>
       <section>
 
+      {% if site.i18n %}
+      <div class="lang-switch">
+        <button class="lang-btn active" data-lang="zh">中文</button>
+        <button class="lang-btn" data-lang="en">English</button>
+      </div>
+      {% endif %}
+
       {{ content }}
 
       </section>
@@ -66,5 +73,6 @@
     </div>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
     <script src="{{ "/assets/js/projects-animation.js" | relative_url }}"></script>
+    <script src="{{ "/assets/js/lang-switch.js" | relative_url }}"></script>
   </body>
 </html>

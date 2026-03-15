@@ -5,6 +5,7 @@ show_downloads: False
 show_links: True
 google_analytics:
 theme: jekyll-theme-minimal
+i18n: true
 
 email: "mailto:zouyipeng32@outlook.com"
 github: "https://github.com/zouyipeng"

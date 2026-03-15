@@ -1,5 +1,37 @@
 /* Custom Styles for Personal Page */
 
+/* Language Switch */
+.lang-switch {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.lang-btn {
+  padding: 6px 16px;
+  border: 1px solid #e5e5e5;
+  background: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+  color: #555;
+  transition: all 0.3s ease;
+}
+
+.lang-btn:hover {
+  background: #f0f0f0;
+}
+
+.lang-btn.active {
+  background: #267CB9;
+  color: #fff;
+  border-color: #267CB9;
+}
+
+.lang-en {
+  display: none;
+}
+
 /* Social Icons */
 .social-icons {
   margin-top: 15px;
