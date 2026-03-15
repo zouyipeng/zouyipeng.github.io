@@ -40,6 +40,26 @@ SDE，操作系统内核与嵌入式开发。
 ---
 
 ## 精选项目
+
+<div class="projects-section">
+  <div class="project-card" data-delay="0">
+    <h3>[项目名称 1](https://github.com/zouyipeng/project1)</h3>
+    <p class="project-tech">C • Linux Kernel API • • Make</p>
+    <p>开发了用于与自定义硬件外设接口的内核模块。实现了中断处理和 DMA 传输机制。</p>
+  </div>
+
+  <div class="project-card" data-delay="150">
+    <h3>[项目名称 2](https://github.com/zouyipeng/project2)</h3>
+    <p class="project-tech">C • Assembly • ARM Architecture</p>
+    <p>为 ARM Cortex-M4 从零构建轻量级 RTOS。功能包括任务调度、信号量同步和内存保护。</p>
+  </div>
+
+  <div class="project-card" data-delay="300">
+    <h3>[项目名称 3](https://github.com/zouyipeng/project3)</h3>
+    <p class="project-tech">C++ • MQTT • FreeRTOS</p>
+    <p>为分布式嵌入式系统创建了监控框架。实现了实时数据收集和远程遥测。</p>
+  </div>
+</div>
 </div>
 
 <div class="lang-en">
@@ -80,45 +100,24 @@ Thesis: "Efficient Memory Management in Resource-Constrained Environments"
 ---
 
 ## Featured Projects
-</div>
 
 <div class="projects-section">
   <div class="project-card" data-delay="0">
-    <div class="lang-zh">
-      <h3>[项目名称 1](https://github.com/zouyipeng/project1)</h3>
-      <p class="project-tech">C • Linux Kernel API • Make</p>
-      <p>开发了用于与自定义硬件外设接口的内核模块。实现了中断处理和 DMA 传输机制。</p>
-    </div>
-    <div class="lang-en">
-      <h3>[Project Name 1](https://github.com/zouyipeng/project1)</h3>
-      <p class="project-tech">C • Linux Kernel API • Make</p>
-      <p>Developed a kernel module for interfacing with custom hardware peripherals. Implemented interrupt handling and DMA transfer mechanisms.</p>
-    </div>
+    <h3>[Project Name 1](https://github.com/zouyipeng/project1)</h3>
+    <p class="project-tech">C • Linux Kernel API • Make</p>
+    <p>Developed a kernel module for interfacing with custom hardware peripherals. Implemented interrupt handling and DMA transfer mechanisms.</p>
   </div>
 
   <div class="project-card" data-delay="150">
-    <div class="lang-zh">
-      <h3>[项目名称 2](https://github.com/zouyipeng/project2)</h3>
-      <p class="project-tech">C • Assembly • ARM Architecture</p>
-      <p>为 ARM Cortex-M4 从零构建轻量级 RTOS。功能包括任务调度、信号量同步和内存保护。</p>
-    </div>
-    <div class="lang-en">
-      <h3>[Project Name 2](https://github.com/zouyipeng/project2)</h3>
-      <p class="project-tech">C • Assembly • ARM Architecture</p>
-      <p>Built a lightweight RTOS from scratch for ARM Cortex-M4. Features include task scheduling, semaphore synchronization, and memory protection.</p>
-    </div>
+    <h3>[Project Name 2](https://github.com/zouyipeng/project2)</h3>
+    <p class="project-tech">C • Assembly • ARM Architecture</p>
+    <p>Built a lightweight RTOS from scratch for ARM Cortex-M4. Features include task scheduling, semaphore synchronization, and memory protection.</p>
   </div>
 
   <div class="project-card" data-delay="300">
-    <div class="lang-zh">
-      <h3>[项目名称 3](https://github.com/zouyipeng/project3)</h3>
-      <p class="project-tech">C++ • MQTT • FreeRTOS</p>
-      <p>为分布式嵌入式系统创建了监控框架。实现了实时数据收集和远程遥测。</p>
-    </div>
-    <div class="lang-en">
-      <h3>[Project Name 3](https://github.com/zouyipeng/project3)</h3>
-      <p class="project-tech">C++ • MQTT • FreeRTOS</p>
-      <p>Created a monitoring framework for distributed embedded systems. Implemented real-time data collection and remote telemetry.</p>
-    </div>
+    <h3>[Project Name 3](https://github.com/zouyipeng/project3)</h3>
+    <p class="project-tech">C++ • MQTT • FreeRTOS</p>
+    <p>Created a monitoring framework for a distributed embedded systems. Implemented real-time data collection and remote telemetry.</p>
   </div>
+</div>
 </div>
