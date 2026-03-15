@@ -1,5 +1,11 @@
 /* Custom Styles for Personal Page */
 
+/* Skills Cloud in Header */
+.skills-cloud {
+  margin-top: 15px;
+  line-height: 1.8;
+}
+
 /* Skill Tags Cloud */
 .skill-tag {
   display: inline-block;

@@ -40,40 +40,6 @@ Thesis: "Efficient Memory Management in Resource-Constrained Environments"
 
 ---
 
-## Technical Skills
-
-<span class="skill-tag">C</span>
-<span class="skill-tag">C++</span>
-<span class="skill-tag">Rust</span>
-<span class="skill-tag">Assembly (ARM, x86)</span>
-<span class="skill-tag">Python</span>
-
-<span class="skill-tag">Linux Kernel</span>
-<span class="skill-tag">FreeRTOS</span>
-<span class="skill-tag">RT-Thread</span>
-
-<span class="skill-tag">ARM Cortex-M</span>
-<span class="skill-tag">x86</span>
-<span class="skill-tag">RISC-V</span>
-<span class="skill-tag">STM32</span>
-<span class="skill-tag">ESP32</span>
-
-<span class="skill-tag">Git</span>
-<span class="skill-tag">GDB</span>
-<span class="skill-tag">Make</span>
-<span class="skill-tag">CMake</span>
-<span class="skill-tag">JTAG/SWD</span>
-
-<span class="skill-tag">I2C</span>
-<span class="skill-tag">SPI</span>
-<span class="skill-tag">UART</span>
-<span class="skill-tag">CAN</span>
-<span class="skill-tag">USB</span>
-<span class="skill-tag">TCP/IP</span>
-<span class="skill-tag">MQTT</span>
-
----
-
 ## Featured Projects
 
 <div class="projects-section">

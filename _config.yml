@@ -5,3 +5,30 @@ show_downloads: False
 show_links: True
 google_analytics:
 theme: jekyll-theme-minimal
+
+skills:
+  - C
+  - C++
+  - Rust
+  - Assembly (ARM, x86)
+  - Python
+  - Linux Kernel
+  - FreeRTOS
+  - RT-Thread
+  - ARM Cortex-M
+  - x86
+  - RISC-V
+  - STM32
+  - ESP32
+  - Git
+  - GDB
+  - Make
+  - CMake
+  - JTAG/SWD
+  - I2C
+  - SPI
+  - UART
+  - CAN
+  - USB
+  - TCP/IP
+  - MQTT
