@@ -21,7 +21,20 @@
           <img src="{{site.logo | relative_url}}" alt="Logo" />
         {% endif %}
 
-        <p>{{ site.description | default: site.github.project_tagline }}</p>
+        {% if site.show_links %}
+        <div class="social-icons">
+          {% if site.email %}
+          <a class="social-icon" href="{{ site.email }}" title="Email">
+            <img src="/assets/img/email.svg" alt="Email" width="24" height="24">
+          </a>
+          {% endif %}
+          {% if site.github %}
+          <a class="social-icon" href="{{ site.github }}" title="GitHub">
+            <img src="/assets/img/github.svg" alt="GitHub" width="24" height="24">
+          </a>
+          {% endif %}
+        </div>
+        {% endif %}
 
         {% if site.skills %}
         <div class="skills-cloud">
@@ -37,12 +50,6 @@
           <li><a href="{{ site.github.tar_url }}">Download <strong>TAR Ball</strong></a></li>
           <li><a href="{{ site.github.repository_url }}">View On <strong>GitHub</strong></a></li>
         </ul>
-        {% endif %}
-
-        {% if site.show_links %}
-        <a class="social-icon--link github" href="https://github.com/zouyipeng">
-          <img src="/assets/img/github.svg" alt="SVG Image" width="25" height="25">
-        </a>
         {% endif %}
       </header>
       <section>

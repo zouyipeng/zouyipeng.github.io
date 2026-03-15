@@ -1,10 +1,13 @@
 title: Yipeng Zou
 logo: /assets/img/my.jpg
-description: "Email: zouyipeng32@outlook.com"
+description: ""
 show_downloads: False
 show_links: True
 google_analytics:
 theme: jekyll-theme-minimal
+
+email: "mailto:zouyipeng32@outlook.com"
+github: "https://github.com/zouyipeng"
 
 skills:
   - C

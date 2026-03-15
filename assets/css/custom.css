@@ -1,5 +1,39 @@
 /* Custom Styles for Personal Page */
 
+/* Social Icons */
+.social-icons {
+  margin-top: 15px;
+  display: flex;
+  gap: 15px;
+}
+
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #f0f0f0;
+  transition: all 0.3s ease;
+  color: #555;
+}
+
+.social-icon:hover {
+  background: #267CB9;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.social-icon img {
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.social-icon:hover img {
+  filter: grayscale(0%);
+}
+
 /* Skills Cloud in Header */
 .skills-cloud {
   margin-top: 15px;

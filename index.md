@@ -6,8 +6,6 @@ layout: default
 
 SDE, OS Kernel and Embedded Development.
 
-Email: [zouyipeng32@outlook.com](mailto:zouyipeng32@outlook.com)
-
 ---
 
 ## Professional Experience
