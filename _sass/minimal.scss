@@ -2,3 +2,31 @@
 //     @import "{{ site.theme }}";
 // Then using this theme with jekyll-remote-theme will work fine.
 @import "jekyll-theme-minimal";
+
+.lang-switch {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.lang-btn {
+  padding: 6px 16px;
+  border: 1px solid #e5e5e5;
+  background: #fff;
+  color: #727272;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.lang-btn:hover {
+  background: #f5f5f5;
+  color: #222;
+}
+
+.lang-btn.active {
+  background: #267CB9;
+  color: #fff;
+  border-color: #267CB9;
+}
