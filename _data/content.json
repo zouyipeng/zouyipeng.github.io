@@ -1,0 +1,144 @@
+{
+  "zh": {
+    "title": "个人简介",
+    "description": "SDE，操作系统内核与嵌入式开发。",
+    "experience": {
+      "title": "工作经历",
+      "jobs": [
+        {
+          "period": "2022 ~ 至今",
+          "title": "软件工程师",
+          "company": "[公司名称]",
+          "achievements": [
+            "领导 Linux 嵌入式系统内核模块开发",
+            "优化内存管理算法，启动时间减少 30%",
+            "与跨职能团队协作进行系统架构设计"
+          ]
+        },
+        {
+          "period": "2018 ~ 2022",
+          "title": "初级软件工程师",
+          "company": "[前公司]",
+          "achievements": [
+            "开发 ARM 微控制器设备驱动程序",
+            "在自定义 RTOS 中实现实时任务调度",
+            "维护和调试现有固件代码库"
+          ]
+        }
+      ]
+    },
+    "education": {
+      "title": "教育背景",
+      "degrees": [
+        {
+          "period": "2016 ~ 2018",
+          "degree": "计算机科学硕士",
+          "university": "[大学名称]",
+          "thesis": "论文：\"资源受限环境中的高效内存管理\""
+        },
+        {
+          "period": "2012 ~ 2016",
+          "degree": "计算机科学学士",
+          "university": "[大学名称]"
+        }
+      ]
+    },
+    "projects": {
+      "title": "精选项目",
+      "items": [
+        {
+          "delay": 0,
+          "name": "项目名称 1",
+          "url": "https://github.com/zouyipeng/project1",
+          "tech": "C • Linux Kernel API • Make",
+          "description": "开发了用于与自定义硬件外设接口的内核模块。实现了中断处理和 DMA 传输机制。"
+        },
+        {
+          "delay": 150,
+          "name": "项目名称 2",
+          "url": "https://github.com/zouyipeng/project2",
+          "tech": "C • Assembly • ARM Architecture",
+          "description": "为 ARM Cortex-M4 从零构建轻量级 RTOS。功能包括任务调度、信号量同步和内存保护。"
+        },
+        {
+          "delay": 300,
+          "name": "项目名称 3",
+          "url": "https://github.com/zouyipeng/project3",
+          "tech": "C++ • MQTT • FreeRTOS",
+          "description": "为分布式嵌入式系统创建了监控框架。实现了实时数据收集和远程遥测。"
+        }
+      ]
+    }
+  },
+  "en": {
+    "title": "Personal Profile",
+    "description": "SDE, OS Kernel and Embedded Development.",
+    "experience": {
+      "title": "Professional Experience",
+      "jobs": [
+        {
+          "period": "2022 ~ Present",
+          "title": "Software Engineer",
+          "company": "[Company Name]",
+          "achievements": [
+            "Led development of kernel modules for Linux-based embedded systems",
+            "Optimized memory management algorithms, reducing boot time by 30%",
+            "Collaborated with cross-functional teams on system architecture design"
+          ]
+        },
+        {
+          "period": "2018 ~ 2022",
+          "title": "Junior Software Engineer",
+          "company": "[Previous Company]",
+          "achievements": [
+            "Developed device drivers for ARM-based microcontrollers",
+            "Implemented real-time task scheduling in custom RTOS",
+            "Maintained and debugged existing firmware codebase"
+          ]
+        }
+      ]
+    },
+    "education": {
+      "title": "Educational Background",
+      "degrees": [
+        {
+          "period": "2016 ~ 2018",
+          "degree": "Master of Science in Computer Science",
+          "university": "[University Name]",
+          "thesis": "Thesis: \"Efficient Memory Management in Resource-Constrained Environments\""
+        },
+        {
+          "period": "2012 ~ 2016",
+          "degree": "Bachelor of Science in Computer Science",
+          "university": "[University Name]"
+        }
+      ]
+    },
+    "projects": {
+      "title": "Featured Projects",
+      "items": [
+        {
+          "delay": 0,
+          "name": "Project Name 1",
+          "url": "https://github.com/zouyipeng/project1",
+          "tech": "C • Linux Kernel API • Make",
+          "description": "Developed a kernel module for interfacing with custom hardware peripherals. Implemented interrupt handling and DMA transfer mechanisms."
+        },
+        {
+          "delay": 150,
+          "name": "Project Name 2",
+          "url": "https://github.com/zouyipeng/project2",
+          "tech": "C • Assembly • ARM Architecture",
+          "description": "Built a lightweight RTOS from scratch for ARM Cortex-M4. Features include task scheduling, semaphore synchronization, and memory protection."
+        },
+        {
+          "delay": 300,
+          "name": "Project Name 3",
+          "url": "https://github.com/zouyipeng/project3",
+          "tech": "C++ • MQTT • FreeRTOS",
+          "description": "Created a monitoring framework for distributed embedded systems. Implemented real-time data collection and remote telemetry."
+        }
+      ]
+    }
+  }
+}
