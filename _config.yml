@@ -14,27 +14,13 @@ github_icon: "/assets/img/github.svg"
 
 skills:
   - C
-  - C++
-  - Rust
-  - Assembly (ARM, x86)
+  - Assembly (ARM)
   - Python
   - Linux Kernel
   - FreeRTOS
-  - RT-Thread
-  - ARM Cortex-M
-  - x86
-  - RISC-V
-  - STM32
-  - ESP32
+  - ARM64
   - Git
   - GDB
   - Make
-  - CMake
+  - Visual Studio Code
   - JTAG/SWD
-  - I2C
-  - SPI
-  - UART
-  - CAN
-  - USB
-  - TCP/IP
-  - MQTT
