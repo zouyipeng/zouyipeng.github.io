@@ -23,14 +23,14 @@
 
         {% if site.show_links %}
         <div class="social-icons">
-          {% if site.email %}
+          {% if site.email and site.email_icon %}
           <a class="social-icon" href="{{ site.email }}" title="Email">
-            <img src="/assets/img/email.svg" alt="Email" width="24" height="24">
+            <img src="{{ site.email_icon | relative_url }}" alt="Email" width="24" height="24">
           </a>
           {% endif %}
-          {% if site.github %}
+          {% if site.github and site.github_icon %}
           <a class="social-icon" href="{{ site.github }}" title="GitHub">
-            <img src="/assets/img/github.svg" alt="GitHub" width="24" height="24">
+            <img src="{{ site.github_icon | relative_url }}" alt="GitHub" width="24" height="24">
           </a>
           {% endif %}
         </div>

@@ -9,6 +9,8 @@ i18n: true
 
 email: "mailto:zouyipeng32@outlook.com"
 github: "https://github.com/zouyipeng"
+email_icon: "/assets/img/email.svg"
+github_icon: "/assets/img/github.svg"
 
 skills:
   - C
