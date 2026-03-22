@@ -22,8 +22,10 @@ window.addEventListener('DOMContentLoaded', function() {
 
   let isDragging = false;
   let startX = 0;
+  let startY = 0;
   let isEnglish = true;
-  const threshold = 100;
+  const minSwipeDistance = 30;
+  const maxVerticalMovement = 30;
   let lastSwitchTime = 0;
   const switchCooldown = 300;
 
@@ -51,7 +53,6 @@ window.addEventListener('DOMContentLoaded', function() {
     if (zhLabel) zhLabel.classList.add('active');
     if (enLabel) enLabel.classList.remove('active');
     
-    // Trigger project animation
     setTimeout(() => {
       if (typeof triggerProjectAnimation === 'function') {
         triggerProjectAnimation();
@@ -83,7 +84,6 @@ window.addEventListener('DOMContentLoaded', function() {
     if (zhLabel) zhLabel.classList.remove('active');
     if (enLabel) enLabel.classList.add('active');
     
-    // Trigger project animation
     setTimeout(() => {
       if (typeof triggerProjectAnimation === 'function') {
         triggerProjectAnimation();
@@ -91,65 +91,38 @@ window.addEventListener('DOMContentLoaded', function() {
     }, 50);
   }
 
-  // Mouse events
-  section.addEventListener('mousedown', function(e) {
-    isDragging = true;
-    startX = e.clientX;
-    console.log('Mouse down at:', startX);
-  });
-
-  document.addEventListener('mousemove', function(e) {
-    if (!isDragging) return;
-    
-    const deltaX = e.clientX - startX;
-    console.log('Mouse move, delta:', deltaX);
-    
-    if (deltaX > threshold) {
-      console.log('Swipe right detected');
-      switchToEnglish();
-      isDragging = false;
-      startX = e.clientX;
-    } else if (deltaX < -threshold) {
-      console.log('Swipe left detected');
-      switchToChinese();
-      isDragging = false;
-      startX = e.clientX;
-    }
-  });
-
-  document.addEventListener('mouseup', function() {
-    isDragging = false;
-  });
-
   // Touch events
   section.addEventListener('touchstart', function(e) {
     isDragging = true;
     startX = e.touches[0].clientX;
-    console.log('Touch start at:', startX);
-  });
+    startY = e.touches[0].clientY;
+    console.log('Touch start at:', startX, startY);
+  }, { passive: true });
 
-  section.addEventListener('touchmove', function(e) {
+  section.addEventListener('touchend', function(e) {
     if (!isDragging) return;
     
-    const deltaX = e.touches[0].clientX - startX;
-    console.log('Touch move, delta:', deltaX);
+    const touch = e.changedTouches[0];
+    const endX = touch.clientX;
+    const endY = touch.clientY;
     
-    if (deltaX > threshold) {
-      console.log('Touch swipe right detected');
-      e.preventDefault();
-      switchToEnglish();
-      isDragging = false;
-      startX = e.touches[0].clientX;
-    } else if (deltaX < -threshold) {
-      console.log('Touch swipe left detected');
-      e.preventDefault();
-      switchToChinese();
-      isDragging = false;
-      startX = e.touches[0].clientX;
+    const deltaX = endX - startX;
+    const deltaY = endY - startY;
+    const absDeltaX = Math.abs(deltaX);
+    const absDeltaY = Math.abs(deltaY);
+    
+    console.log('Touch end - deltaX:', deltaX, 'deltaY:', deltaY);
+    
+    if (absDeltaX > minSwipeDistance && absDeltaY < maxVerticalMovement) {
+      if (deltaX > 0) {
+        console.log('Swipe right detected');
+        switchToEnglish();
+      } else {
+        console.log('Swipe left detected');
+        switchToChinese();
+      }
     }
-  });
-
-  section.addEventListener('touchend', function() {
+    
     isDragging = false;
   });
 
