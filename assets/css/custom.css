@@ -2,11 +2,11 @@
 
 /* Language Containers */
 .lang-zh {
-  display: none !important;
+  display: none;
 }
 
 .lang-en {
-  display: block !important;
+  display: block;
 }
 
 /* Global spacing adjustments */
@@ -23,6 +23,11 @@ hr {
   margin-bottom: 20px;
   display: flex;
   justify-content: center;
+}
+
+section {
+  touch-action: pan-y;
+  user-select: none;
 }
 
 .lang-label {
