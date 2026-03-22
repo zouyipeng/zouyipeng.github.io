@@ -187,7 +187,7 @@ section * {
 
 /* Timeline Styles */
 h3 {
-  margin-top: 15px;
+  margin-top: 12px;
   border-left: 3px solid #267CB9;
   padding-left: 10px;
 }
@@ -199,11 +199,11 @@ h4 {
 
 /* Job and Degree Items */
 .job-item, .degree-item {
-  padding: 12px;
+  padding: 8px;
   background: #fafafa;
   border-left: 3px solid #267CB9;
   border-radius: 4px;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .job-table, .degree-table {
@@ -218,8 +218,8 @@ h4 {
 }
 
 .logo-cell {
-  width: 80px;
-  padding-right: 12px;
+  width: 60px;
+  padding-right: 10px;
   vertical-align: top;
   padding-top: 0;
 }
@@ -236,16 +236,16 @@ h4 {
 }
 
 .achievements-list {
-  margin: 6px 0 0 0;
+  margin: 4px 0 0 0;
   padding-left: 20px;
 }
 
 .achievements-list li {
-  margin-bottom: 4px;
+  margin-bottom: 3px;
 }
 
 .thesis-text {
-  margin: 6px 0 0 0;
+  margin: 4px 0 0 0;
   font-style: italic;
   color: #666;
 }
@@ -350,7 +350,7 @@ h4 {
 
 /* Company and University Logos */
 .company-logo, .university-logo {
-  height: 70px;
+  height: 50px;
   width: auto;
   display: block;
 }
@@ -426,16 +426,20 @@ h4 {
   }
   
   .logo-cell {
-    width: 60px;
-    padding-right: 10px;
+    width: 50px;
+    padding-right: 8px;
   }
   
   .company-logo, .university-logo {
-    height: 50px;
+    height: 40px;
     width: auto;
   }
   
   .info-cell {
     font-size: 14px;
+  }
+  
+  .job-item, .degree-item {
+    padding: 6px;
   }
 }
