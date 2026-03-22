@@ -26,6 +26,13 @@ section {
   -ms-user-select: none;
 }
 
+section * {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
 /* Language Switch - Simple Labels */
 .lang-switch {
   margin-bottom: 20px;
