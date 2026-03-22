@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   toggleInput.addEventListener('change', (e) => {
     const lang = e.target.checked ? 'en' : 'zh';
-    switchLanguage(lang);
+  switchLanguage(lang);
   });
 
   // Initialize with English
