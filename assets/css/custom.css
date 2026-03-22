@@ -18,77 +18,89 @@ hr {
   margin: 0 0 10px;
 }
 
-/* Language Switch - Slide Design */
+/* Language Switch - Toggle Switch Design */
 .lang-switch {
   margin-bottom: 20px;
   display: flex;
   justify-content: center;
 }
 
-.slide-switch {
+.toggle-container {
   display: flex;
   align-items: center;
   gap: 12px;
 }
 
-.switch-track {
+.lang-label {
+  font-size: 13px;
+  font-weight: 500;
+  color: #555;
+  transition: color 0.3s ease;
+}
+
+.lang-label.active {
+  color: #267CB9;
+  font-weight: 600;
+}
+
+.toggle-switch {
   position: relative;
-  width: 80px;
-  height: 36px;
-  background: #e5e5e5;
-  border-radius: 18px;
-  overflow: hidden;
+  width: 50px;
+  height: 28px;
+}
+
+.toggle-input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggle-label {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #e5e5e5;
+  transition: 0.3s ease-in-out;
+  border-radius: 14px;
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
-.switch-slider {
+.toggle-label:hover {
+  background-color: #d5d5d5;
+}
+
+.toggle-slider {
   position: absolute;
-  top: 2px;
-  left: 2px;
-  width: 76px;
-  height: 32px;
-  background: #267CB9;
-  border-radius: 16px;
-  cursor: grab;
-  transition: transform 0.3s ease;
+  content: "";
+  height: 22px;
+  width: 22px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.3s ease-in-out;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-.switch-slider.dragging {
-  cursor: grabbing;
-  transition: none;
-}
-
-.slider-text {
-  color: white;
-  font-size: 14px;
+  font-size: 10px;
   font-weight: 600;
-  user-select: none;
+  color: #555;
 }
 
-.lang-indicators {
-  display: flex;
-  gap: 8px;
+.toggle-input:checked + .toggle-label {
+  background-color: #267CB9;
 }
 
-.lang-indicator {
-  font-size: 13px;
-  font-weight: 500;
-  color: #999;
-  transition: color 0.3s ease;
-  cursor: pointer;
+.toggle-input:checked + .toggle-label .toggle-slider {
+  transform: translateX(22px);
 }
 
-.lang-indicator.active {
-  color: #267CB9;
-  font-weight: 600;
-}
-
-.lang-indicator:hover {
-  color: #267CB9;
+.toggle-switch:hover .toggle-slider {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
 }
 
 /* Social Icons */
