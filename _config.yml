@@ -15,12 +15,5 @@ github_icon: "/assets/img/github.svg"
 skills:
   - C
   - Assembly (ARM)
-  - Python
   - Linux Kernel
-  - FreeRTOS
-  - ARM64
-  - Git
-  - GDB
-  - Make
-  - vibe code
-  - JTAG/SWD
+  - vibe coding

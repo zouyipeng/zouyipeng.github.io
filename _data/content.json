@@ -1,17 +1,14 @@
 {
   "zh": {
     "title": "个人简介",
-    "description": "SDE，操作系统内核与嵌入式开发。",
+    "description": "Senior SDE",
     "experience": {
       "title": "工作经历",
       "jobs": [
         {
           "period": "2018 ~ 至今",
-          "title": "软件工程师",
-          "company": "华为",
-          "achievements": [
-            "Linux kernel"
-          ]
+          "title": "Senior SDE",
+          "company": "华为"
         }
       ]
     },
@@ -26,13 +23,13 @@
       ]
     },
     "projects": {
-      "title": "精选项目",
+      "title": "项目经历",
       "items": [
         {
           "delay": 0,
           "name": "openEyes",
           "url": "https://github.com/zouyipeng/openEyes",
-          "tech": "vibe coding, clawer",
+          "tech": "vibe coding",
           "description": "一个互联网信息收集与整合平台，通过网页（支持移动端）每日整合展示来自多个信息源的内容，并使用 AI 进行智能总结。"
         },
         {
@@ -52,17 +49,14 @@
   },
   "en": {
     "title": "Personal Profile",
-    "description": "SDE, OS Kernel and Embedded Development.",
+    "description": "Senior SDE",
     "experience": {
       "title": "Professional Experience",
       "jobs": [
         {
           "period": "2018 ~ Present",
-          "title": "Software Engineer",
-          "company": "Huawei",
-          "achievements": [
-            "Linux kernel"
-          ]
+          "title": "Senior SDE",
+          "company": "Huawei"
         }
       ]
     },
@@ -77,13 +71,13 @@
       ]
     },
     "projects": {
-      "title": "Featured Projects",
+      "title": "Project Experience",
       "items": [
         {
           "delay": 0,
           "name": "openEyes",
           "url": "https://github.com/zouyipeng/openEyes",
-          "tech": "vibe coding, crawler",
+          "tech": "vibe coding",
           "description": "An internet information collection and integration platform that aggregates and displays content from multiple sources daily through web pages (supports mobile), with AI-powered intelligent summarization."
         },
         {
