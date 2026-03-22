@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     data.experience.jobs.forEach(job => {
       const companyInfo = job.logo 
-        ? `<p><strong>${job.title}</strong> | <img src="${job.logo}" alt="${job.company}" class="company-logo"></p>`
+        ? `<p><strong>${job.title}</strong> | ${job.company} <img src="${job.logo}" alt="${job.company}" class="company-logo"></p>`
         : `<p><strong>${job.title}</strong> | ${job.company}</p>`;
       
       html += `
@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     data.education.degrees.forEach(degree => {
       const universityInfo = degree.logo 
-        ? `<p><strong>${degree.degree}</strong> | <img src="${degree.logo}" alt="${degree.university}" class="university-logo"></p>`
+        ? `<p><strong>${degree.degree}</strong> | ${degree.university} <img src="${degree.logo}" alt="${degree.university}" class="university-logo"></p>`
         : `<p><strong>${degree.degree}</strong> | ${degree.university}</p>`;
       
       html += `

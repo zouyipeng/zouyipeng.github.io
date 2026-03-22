@@ -227,9 +227,9 @@ h4 {
 
 /* Company and University Logos */
 .company-logo, .university-logo {
-  height: 20px;
+  height: 30px;
   vertical-align: middle;
-  margin-left: 5px;
+  margin-left: 8px;
 }
 
 .highlight-content {
@@ -303,6 +303,6 @@ h4 {
   }
   
   .company-logo, .university-logo {
-    height: 18px;
+    height: 24px;
   }
 }
