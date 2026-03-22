@@ -29,5 +29,5 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  switchLanguage('zh');
+  switchLanguage('en');
 });
