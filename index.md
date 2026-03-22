@@ -71,6 +71,33 @@ document.addEventListener('DOMContentLoaded', function() {
     
     html += `</div>`;
     
+    if (data.highlights && data.highlights.items && data.highlights.items.length > 0) {
+      html += `
+        <hr>
+        <h2>${data.highlights.title}</h2>
+        <div class="highlights-section">
+      `;
+      
+      data.highlights.items.forEach(highlight => {
+        const icon = highlight.type === '论文' || highlight.type === '论文' ? '📄' : 
+                     highlight.type === '奖项' || highlight.type === '奖项' ? '🏆' : '⭐';
+        
+        html += `
+          <div class="highlight-item">
+            <span class="highlight-icon">${icon}</span>
+            <div class="highlight-content">
+              <h4>${highlight.title}</h4>
+              ${highlight.journal ? `<p class="highlight-meta">${highlight.journal} (${highlight.year})</p>` : ''}
+              ${highlight.year && !highlight.journal ? `<p class="highlight-meta">${highlight.year}</p>` : ''}
+              ${highlight.description ? `<p class="highlight-desc">${highlight.description}</p>` : ''}
+            </div>
+          </div>
+        `;
+      });
+      
+      html += `</div>`;
+    }
+    
     container.innerHTML = html;
   }
   
