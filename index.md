@@ -24,12 +24,14 @@ document.addEventListener('DOMContentLoaded', function() {
       html += `
         <h3>${job.period}</h3>
         <p><strong>${job.title}</strong> | ${job.company}</p>
-        <ul>
       `;
-      job.achievements.forEach(achievement => {
-        html += `<li>${achievement}</li>`;
-      });
-      html += `</ul>`;
+      if (job.achievements && job.achievements.length > 0) {
+        html += `<ul>`;
+        job.achievements.forEach(achievement => {
+          html += `<li>${achievement}</li>`;
+        });
+        html += `</ul>`;
+      }
     });
     
     html += `

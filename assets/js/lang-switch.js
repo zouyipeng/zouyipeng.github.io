@@ -29,5 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  switchLanguage('en');
+  setTimeout(() => {
+    switchLanguage('en');
+  }, 100);
 });
