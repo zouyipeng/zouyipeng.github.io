@@ -2,11 +2,11 @@
 
 /* Language Containers */
 .lang-zh {
-  display: none;
+  display: none !important;
 }
 
 .lang-en {
-  display: block;
+  display: block !important;
 }
 
 /* Global spacing adjustments */
@@ -227,11 +227,6 @@ hr {
   word-wrap: break-word;
   max-width: 100%;
   letter-spacing: 0.2px;
-}
-
-.project-card.visible {
-  opacity: 1;
-  transform: translateY(0);
 }
 
 /* Timeline Styles */
