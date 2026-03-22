@@ -130,18 +130,19 @@ window.addEventListener('DOMContentLoaded', function() {
 
   section.addEventListener('touchmove', function(e) {
     if (!isDragging) return;
-    e.preventDefault();
     
     const deltaX = e.touches[0].clientX - startX;
     console.log('Touch move, delta:', deltaX);
     
     if (deltaX > threshold) {
       console.log('Touch swipe right detected');
+      e.preventDefault();
       switchToEnglish();
       isDragging = false;
       startX = e.touches[0].clientX;
     } else if (deltaX < -threshold) {
       console.log('Touch swipe left detected');
+      e.preventDefault();
       switchToChinese();
       isDragging = false;
       startX = e.touches[0].clientX;
