@@ -21,19 +21,25 @@ document.addEventListener('DOMContentLoaded', function() {
     `;
     
     data.experience.jobs.forEach(job => {
-      const logoHtml = job.logo 
-        ? `<img src="${job.logo}" alt="${job.company}" class="company-logo">`
+      const logoCell = job.logo 
+        ? `<td rowspan="2" class="logo-cell"><img src="${job.logo}" alt="${job.company}" class="company-logo"></td>`
         : '';
       
       html += `
-        <h3>${job.period}</h3>
         <div class="job-item">
-          <div class="job-content">
-            <p><strong>${job.title}</strong> | ${job.company} ${logoHtml}</p>
+          <table class="job-table">
+            <tr>
+              ${logoCell}
+              <td class="period-cell">${job.period}</td>
+            </tr>
+            <tr>
+              <td class="info-cell"><strong>${job.title}</strong> | ${job.company}</td>
+            </tr>
+          </table>
       `;
       
       if (job.achievements && job.achievements.length > 0) {
-        html += `<ul>`;
+        html += `<ul class="achievements-list">`;
         job.achievements.forEach(achievement => {
           html += `<li>${achievement}</li>`;
         });
@@ -41,7 +47,6 @@ document.addEventListener('DOMContentLoaded', function() {
       }
       
       html += `
-          </div>
         </div>
       `;
     });
@@ -52,23 +57,28 @@ document.addEventListener('DOMContentLoaded', function() {
     `;
     
     data.education.degrees.forEach(degree => {
-      const logoHtml = degree.logo 
-        ? `<img src="${degree.logo}" alt="${degree.university}" class="university-logo">`
+      const logoCell = degree.logo 
+        ? `<td rowspan="2" class="logo-cell"><img src="${degree.logo}" alt="${degree.university}" class="university-logo"></td>`
         : '';
       
       html += `
-        <h3>${degree.period}</h3>
         <div class="degree-item">
-          <div class="degree-content">
-            <p><strong>${degree.degree}</strong> | ${degree.university} ${logoHtml}</p>
+          <table class="degree-table">
+            <tr>
+              ${logoCell}
+              <td class="period-cell">${degree.period}</td>
+            </tr>
+            <tr>
+              <td class="info-cell"><strong>${degree.degree}</strong> | ${degree.university}</td>
+            </tr>
+          </table>
       `;
       
       if (degree.thesis) {
-        html += `<p>${degree.thesis}</p>`;
+        html += `<p class="thesis-text">${degree.thesis}</p>`;
       }
       
       html += `
-          </div>
         </div>
       `;
     });
