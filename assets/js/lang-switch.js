@@ -91,6 +91,43 @@ window.addEventListener('DOMContentLoaded', function() {
     }, 50);
   }
 
+  function toggleLanguage() {
+    if (isEnglish) {
+      switchToChinese();
+    } else {
+      switchToEnglish();
+    }
+  }
+
+  // Mouse events
+  section.addEventListener('mousedown', function(e) {
+    isDragging = true;
+    startX = e.clientX;
+    startY = e.clientY;
+    console.log('Mouse down at:', startX, startY);
+  });
+
+  document.addEventListener('mouseup', function(e) {
+    if (!isDragging) return;
+    
+    const endX = e.clientX;
+    const endY = e.clientY;
+    
+    const deltaX = endX - startX;
+    const deltaY = endY - startY;
+    const absDeltaX = Math.abs(deltaX);
+    const absDeltaY = Math.abs(deltaY);
+    
+    console.log('Mouse up - deltaX:', deltaX, 'deltaY:', deltaY);
+    
+    if (absDeltaX > minSwipeDistance && absDeltaY < maxVerticalMovement) {
+      console.log('Mouse swipe detected');
+      toggleLanguage();
+    }
+    
+    isDragging = false;
+  });
+
   // Touch events
   section.addEventListener('touchstart', function(e) {
     isDragging = true;
@@ -114,12 +151,8 @@ window.addEventListener('DOMContentLoaded', function() {
     console.log('Touch end - deltaX:', deltaX, 'deltaY:', deltaY);
     
     if (absDeltaX > minSwipeDistance && absDeltaY < maxVerticalMovement) {
-      console.log('Swipe detected');
-      if (isEnglish) {
-        switchToChinese();
-      } else {
-        switchToEnglish();
-      }
+      console.log('Touch swipe detected');
+      toggleLanguage();
     }
     
     isDragging = false;
