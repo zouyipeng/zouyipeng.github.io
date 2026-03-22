@@ -56,15 +56,16 @@
 
       {% if site.i18n %}
       <div class="lang-switch">
-        <div class="switch-container">
-          <span class="lang-label zh-label">中文</span>
-          <div class="toggle-switch">
-            <input type="checkbox" id="lang-toggle" class="toggle-input" checked>
-            <label for="lang-toggle" class="toggle-label">
-              <span class="toggle-slider"></span>
-            </label>
+        <div class="slide-switch">
+          <div class="switch-track">
+            <div class="switch-slider" id="lang-slider">
+              <span class="slider-text" id="slider-text">EN</span>
+            </div>
           </div>
-          <span class="lang-label en-label">English</span>
+          <div class="lang-indicators">
+            <span class="lang-indicator zh-indicator">中文</span>
+            <span class="lang-indicator en-indicator active">English</span>
+          </div>
         </div>
       </div>
       {% endif %}
