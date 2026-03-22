@@ -21,6 +21,13 @@ document.addEventListener('DOMContentLoaded', function() {
       zhElements.forEach(el => el.style.display = 'none');
       enElements.forEach(el => el.style.display = 'block');
     }
+    
+    // Trigger project animation after language switch
+    setTimeout(() => {
+      if (typeof triggerProjectAnimation === 'function') {
+        triggerProjectAnimation();
+      }
+    }, 50);
   }
 
   langButtons.forEach(btn => {
