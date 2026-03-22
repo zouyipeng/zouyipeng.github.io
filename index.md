@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         html += `
           <div class="highlight-item">
-            <span class="highlight-icon">⭐</span>
+            <span class="highlight-icon"></span>
             <div class="highlight-content">
               ${titleHtml}
               ${highlight.journal ? `<p class="highlight-meta">${highlight.journal} (${highlight.year})</p>` : ''}
