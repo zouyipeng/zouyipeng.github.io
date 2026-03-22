@@ -220,8 +220,7 @@ h4 {
 .logo-cell {
   width: 60px;
   padding-right: 10px;
-  vertical-align: top;
-  padding-top: 0;
+  vertical-align: middle;
 }
 
 .period-cell {
