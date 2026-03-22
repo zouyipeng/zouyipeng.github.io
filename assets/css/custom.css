@@ -18,6 +18,14 @@ hr {
   margin: 0 0 10px;
 }
 
+/* Prevent text selection for better swipe experience */
+section {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
 /* Language Switch - Simple Labels */
 .lang-switch {
   margin-bottom: 20px;
