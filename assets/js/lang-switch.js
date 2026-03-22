@@ -114,12 +114,11 @@ window.addEventListener('DOMContentLoaded', function() {
     console.log('Touch end - deltaX:', deltaX, 'deltaY:', deltaY);
     
     if (absDeltaX > minSwipeDistance && absDeltaY < maxVerticalMovement) {
-      if (deltaX > 0) {
-        console.log('Swipe right detected');
-        switchToEnglish();
-      } else {
-        console.log('Swipe left detected');
+      console.log('Swipe detected');
+      if (isEnglish) {
         switchToChinese();
+      } else {
+        switchToEnglish();
       }
     }
     
