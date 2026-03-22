@@ -35,8 +35,16 @@ document.addEventListener('DOMContentLoaded', function() {
     switchLanguage(lang);
   });
 
-  // Initialize with English
+  // Initialize with English (already set in HTML)
   setTimeout(() => {
-    switchLanguage('en');
+    if (zhLabel) zhLabel.classList.remove('active');
+    if (enLabel) enLabel.classList.add('active');
+    zhElements.forEach(el => el.style.display = 'none');
+    enElements.forEach(el => el.style.display = 'block');
+    
+    // Trigger project animation
+    if (typeof triggerProjectAnimation === 'function') {
+      triggerProjectAnimation();
+    }
   }, 100);
 });
