@@ -79,14 +79,15 @@ document.addEventListener('DOMContentLoaded', function() {
       `;
       
       data.highlights.items.forEach(highlight => {
-        const icon = highlight.type === '论文' || highlight.type === '论文' ? '📄' : 
-                     highlight.type === '奖项' || highlight.type === '奖项' ? '🏆' : '⭐';
+        const titleHtml = highlight.url 
+          ? `<h4><a href="${highlight.url}" target="_blank">${highlight.title}</a></h4>`
+          : `<h4>${highlight.title}</h4>`;
         
         html += `
           <div class="highlight-item">
-            <span class="highlight-icon">${icon}</span>
+            <span class="highlight-icon">⭐</span>
             <div class="highlight-content">
-              <h4>${highlight.title}</h4>
+              ${titleHtml}
               ${highlight.journal ? `<p class="highlight-meta">${highlight.journal} (${highlight.year})</p>` : ''}
               ${highlight.year && !highlight.journal ? `<p class="highlight-meta">${highlight.year}</p>` : ''}
               ${highlight.description ? `<p class="highlight-desc">${highlight.description}</p>` : ''}

@@ -220,6 +220,17 @@ h4 {
   color: #333;
 }
 
+.highlight-content h4 a {
+  color: #267CB9;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.highlight-content h4 a:hover {
+  color: #1a5a8a;
+  text-decoration: underline;
+}
+
 .highlight-meta {
   margin: 3px 0;
   font-size: 13px;

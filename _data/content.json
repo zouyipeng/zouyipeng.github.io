@@ -58,20 +58,19 @@
       "title": "个人成就",
       "items": [
         {
-          "type": "论文",
           "title": "深度学习在图像识别中的应用",
           "journal": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
-          "year": "2024"
+          "year": "2024",
+          "url": "https://example.com/paper"
         },
         {
-          "type": "奖项",
           "title": "全国大学生数学建模竞赛一等奖",
           "year": "2023"
         },
         {
-          "type": "成就",
           "title": "开源项目贡献者",
-          "description": "为多个知名开源项目贡献代码"
+          "description": "为多个知名开源项目贡献代码",
+          "url": "https://github.com/zouyipeng"
         }
       ]
     }
@@ -114,20 +113,20 @@
           "name": "OpenEuler/kernel",
           "url": "https://gitcode.com/openeuler/kernel/commits/OLK-6.6?author=zouyipeng",
           "tech": "ARM64,C,Arch",
-          "description": "OpenEuler kernel特性开发与项目维护"
+          "description": "OpenEuler kernel feature development and project maintenance"
         },
         {
           "delay": 0,
           "name": "Linux kernel",
           "url": "https://lore.kernel.org/all/?q=zouyipeng",
           "tech": "ARM64,C,Arch",
-          "description": "Responsible for Linux kernel feature development and project maintenance"
+          "description": "Linux kernel feature development and project maintenance"
         },
         {
           "delay": 0,
           "name": "Flagship Device Project",
           "tech": "ARM64,kernel,C",
-          "description": "Responsible for feature development and design of the underlying software platform"
+          "description": "Feature development and design of the underlying software platform"
         }
       ]
     },
@@ -135,20 +134,19 @@
       "title": "Personal Achievements",
       "items": [
         {
-          "type": "论文",
           "title": "Deep Learning Applications in Image Recognition",
           "journal": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
-          "year": "2024"
+          "year": "2024",
+          "url": "https://example.com/paper"
         },
         {
-          "type": "奖项",
           "title": "First Prize in National College Mathematical Modeling Competition",
           "year": "2023"
         },
         {
-          "type": "成就",
           "title": "Open Source Contributor",
-          "description": "Contributed code to multiple well-known open source projects"
+          "description": "Contributed code to multiple well-known open source projects",
+          "url": "https://github.com/zouyipeng"
         }
       ]
     }
