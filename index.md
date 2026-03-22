@@ -28,9 +28,8 @@ document.addEventListener('DOMContentLoaded', function() {
       html += `
         <h3>${job.period}</h3>
         <div class="job-item">
-          ${logoHtml}
           <div class="job-content">
-            <p><strong>${job.title}</strong> | ${job.company}</p>
+            <p><strong>${job.title}</strong> | ${job.company} ${logoHtml}</p>
       `;
       
       if (job.achievements && job.achievements.length > 0) {
@@ -60,9 +59,8 @@ document.addEventListener('DOMContentLoaded', function() {
       html += `
         <h3>${degree.period}</h3>
         <div class="degree-item">
-          ${logoHtml}
           <div class="degree-content">
-            <p><strong>${degree.degree}</strong> | ${degree.university}</p>
+            <p><strong>${degree.degree}</strong> | ${degree.university} ${logoHtml}</p>
       `;
       
       if (degree.thesis) {
