@@ -25,29 +25,18 @@ window.addEventListener('DOMContentLoaded', function() {
   let startY = 0;
   let isEnglish = true;
   const minSwipeDistance = 30;
-  const maxVerticalMovement = 30;
-  let lastSwitchTime = 0;
-  const switchCooldown = 300;
+  const maxVerticalMovement = 50;
 
   function switchToChinese() {
-    const now = Date.now();
-    if (now - lastSwitchTime < switchCooldown) {
-      console.log('Switch cooldown active');
-      return;
-    }
-    lastSwitchTime = now;
-    
-    console.log('Switching to Chinese');
+    console.log('Switching to Chinese, current isEnglish:', isEnglish);
     isEnglish = false;
     
     zhElements.forEach(el => {
       el.style.display = 'block';
-      console.log('Showing ZH element');
     });
     
     enElements.forEach(el => {
       el.style.display = 'none';
-      console.log('Hiding EN element');
     });
     
     if (zhLabel) zhLabel.classList.add('active');
@@ -61,24 +50,15 @@ window.addEventListener('DOMContentLoaded', function() {
   }
 
   function switchToEnglish() {
-    const now = Date.now();
-    if (now - lastSwitchTime < switchCooldown) {
-      console.log('Switch cooldown active');
-      return;
-    }
-    lastSwitchTime = now;
-    
-    console.log('Switching to English');
+    console.log('Switching to English, current isEnglish:', isEnglish);
     isEnglish = true;
     
     zhElements.forEach(el => {
       el.style.display = 'none';
-      console.log('Hiding ZH element');
     });
     
     enElements.forEach(el => {
       el.style.display = 'block';
-      console.log('Showing EN element');
     });
     
     if (zhLabel) zhLabel.classList.remove('active');
@@ -92,6 +72,7 @@ window.addEventListener('DOMContentLoaded', function() {
   }
 
   function toggleLanguage() {
+    console.log('Toggle language called, current isEnglish:', isEnglish);
     if (isEnglish) {
       switchToChinese();
     } else {
@@ -118,10 +99,10 @@ window.addEventListener('DOMContentLoaded', function() {
     const absDeltaX = Math.abs(deltaX);
     const absDeltaY = Math.abs(deltaY);
     
-    console.log('Mouse up - deltaX:', deltaX, 'deltaY:', deltaY);
+    console.log('Mouse up - deltaX:', deltaX, 'deltaY:', deltaY, 'absDeltaX:', absDeltaX, 'absDeltaY:', absDeltaY);
     
     if (absDeltaX > minSwipeDistance && absDeltaY < maxVerticalMovement) {
-      console.log('Mouse swipe detected');
+      console.log('Mouse swipe detected, calling toggleLanguage');
       toggleLanguage();
     }
     
@@ -148,10 +129,10 @@ window.addEventListener('DOMContentLoaded', function() {
     const absDeltaX = Math.abs(deltaX);
     const absDeltaY = Math.abs(deltaY);
     
-    console.log('Touch end - deltaX:', deltaX, 'deltaY:', deltaY);
+    console.log('Touch end - deltaX:', deltaX, 'deltaY:', deltaY, 'absDeltaX:', absDeltaX, 'absDeltaY:', absDeltaY);
     
     if (absDeltaX > minSwipeDistance && absDeltaY < maxVerticalMovement) {
-      console.log('Touch swipe detected');
+      console.log('Touch swipe detected, calling toggleLanguage');
       toggleLanguage();
     }
     
