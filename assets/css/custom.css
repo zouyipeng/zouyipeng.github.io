@@ -218,38 +218,18 @@ h4 {
   transform: translateX(5px);
 }
 
-.highlight-icon {
+.highlights-icon {
   width: 20px;
   height: 20px;
   margin-right: 12px;
   flex-shrink: 0;
-  position: relative;
 }
 
-.highlight-icon::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 0;
-  height: 0;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-bottom: 14px solid #267CB9;
-}
-
-.highlight-icon::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 0;
-  height: 0;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-top: 14px solid #267CB9;
+/* Company and University Logos */
+.company-logo, .university-logo {
+  height: 20px;
+  vertical-align: middle;
+  margin-left: 5px;
 }
 
 .highlight-content {
@@ -304,8 +284,9 @@ h4 {
     padding: 10px;
   }
   
-  .highlight-icon {
-    font-size: 18px;
+  .highlights-icon {
+    width: 18px;
+    height: 18px;
     margin-right: 10px;
   }
   
@@ -319,5 +300,9 @@ h4 {
   
   .highlight-desc {
     font-size: 13px;
+  }
+  
+  .company-logo, .university-logo {
+    height: 18px;
   }
 }

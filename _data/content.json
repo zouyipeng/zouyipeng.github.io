@@ -8,7 +8,8 @@
         {
           "period": "2018 ~ 至今",
           "title": "Senior SDE",
-          "company": "华为"
+          "company": "华为",
+          "logo": "/assets/img/huawei.svg"
         }
       ]
     },
@@ -18,7 +19,8 @@
         {
           "period": "2015 ~ 2018",
           "degree": "计算机硕士",
-          "university": "西安电子科技大学"
+          "university": "西安电子科技大学",
+          "logo": "/assets/img/xidian.png"
         }
       ]
     },
@@ -56,6 +58,7 @@
     },
     "Highlights": {
       "title": "Highlights",
+      "icon": "/assets/img/highlights.svg",
       "items": [
         {
           "title": "Deep Learning Applications in Image Recognition",
@@ -80,7 +83,8 @@
         {
           "period": "2018 ~ Present",
           "title": "Senior SDE",
-          "company": "Huawei"
+          "company": "Huawei",
+          "logo": "/assets/img/huawei.svg"
         }
       ]
     },
@@ -90,7 +94,8 @@
         {
           "period": "2015 ~ 2018",
           "degree": "Master of Computer Science",
-          "university": "Xidian University"
+          "university": "Xidian University",
+          "logo": "/assets/img/xidian.png"
         }
       ]
     },
@@ -128,6 +133,7 @@
     },
     "Highlights": {
       "title": "Highlights",
+      "icon": "/assets/img/highlights.svg",
       "items": [
         {
           "title": "Deep Learning Applications in Image Recognition",

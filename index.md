@@ -21,9 +21,13 @@ document.addEventListener('DOMContentLoaded', function() {
     `;
     
     data.experience.jobs.forEach(job => {
+      const companyInfo = job.logo 
+        ? `<p><strong>${job.title}</strong> | <img src="${job.logo}" alt="${job.company}" class="company-logo"></p>`
+        : `<p><strong>${job.title}</strong> | ${job.company}</p>`;
+      
       html += `
         <h3>${job.period}</h3>
-        <p><strong>${job.title}</strong> | ${job.company}</p>
+        ${companyInfo}
       `;
       if (job.achievements && job.achievements.length > 0) {
         html += `<ul>`;
@@ -40,9 +44,13 @@ document.addEventListener('DOMContentLoaded', function() {
     `;
     
     data.education.degrees.forEach(degree => {
+      const universityInfo = degree.logo 
+        ? `<p><strong>${degree.degree}</strong> | <img src="${degree.logo}" alt="${degree.university}" class="university-logo"></p>`
+        : `<p><strong>${degree.degree}</strong> | ${degree.university}</p>`;
+      
       html += `
         <h3>${degree.period}</h3>
-        <p><strong>${degree.degree}</strong> | ${degree.university}</p>
+        ${universityInfo}
       `;
       if (degree.thesis) {
         html += `<p>${degree.thesis}</p>`;
@@ -72,6 +80,10 @@ document.addEventListener('DOMContentLoaded', function() {
     html += `</div>`;
     
     if (data.Highlights && data.Highlights.items && data.Highlights.items.length > 0) {
+      const iconHtml = data.Highlights.icon 
+        ? `<img src="${data.Highlights.icon}" alt="Highlights" class="highlights-icon">`
+        : `<span class="highlight-icon"></span>`;
+      
       html += `
         <hr>
         <h2>${data.Highlights.title}</h2>
@@ -85,7 +97,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         html += `
           <div class="highlight-item">
-            <span class="highlight-icon"></span>
+            ${iconHtml}
             <div class="highlight-content">
               ${titleHtml}
               ${highlight.journal ? `<p class="highlight-meta">${highlight.journal} (${highlight.year})</p>` : ''}
