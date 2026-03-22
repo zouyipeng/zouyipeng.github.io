@@ -212,6 +212,50 @@ h4 {
 }
 
 .job-table td, .degree-table td {
+  padding: 2px 0;
+  vertical-align: middle;
+  text-align: left;
+}
+
+.logo-cell {
+  width: 80px;
+  padding-right: 12px;
+  vertical-align: top;
+  padding-top: 0;
+}
+
+.period-cell {
+  font-weight: 500;
+  color: #666;
+  text-align: left;
+}
+
+.info-cell {
+  font-size: 15px;
+  text-align: left;
+}
+
+.achievements-list {
+  margin: 6px 0 0 0;
+  padding-left: 20px;
+}
+
+.achievements-list li {
+  margin-bottom: 4px;
+}
+
+.thesis-text {
+  margin: 6px 0 0 0;
+  font-style: italic;
+  color: #666;
+}
+
+.job-table, .degree-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.job-table td, .degree-table td {
   padding: 4px 0;
   vertical-align: middle;
 }
@@ -306,7 +350,7 @@ h4 {
 
 /* Company and University Logos */
 .company-logo, .university-logo {
-  height: 50px;
+  height: 70px;
   width: auto;
   display: block;
 }
@@ -382,12 +426,12 @@ h4 {
   }
   
   .logo-cell {
-    width: 50px;
-    padding-right: 8px;
+    width: 60px;
+    padding-right: 10px;
   }
   
   .company-logo, .university-logo {
-    height: 40px;
+    height: 50px;
     width: auto;
   }
   
