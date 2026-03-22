@@ -52,7 +52,7 @@
     "title": "Personal Profile",
     "description": "Senior SDE",
     "experience": {
-      "title": "Professional Experience",
+      "title": "Experience",
       "jobs": [
         {
           "period": "2018 ~ Present",
@@ -62,7 +62,7 @@
       ]
     },
     "education": {
-      "title": "Educational Background",
+      "title": "Educational",
       "degrees": [
         {
           "period": "2015 ~ 2018",
@@ -72,7 +72,7 @@
       ]
     },
     "projects": {
-      "title": "Project Experience",
+      "title": "Project",
       "items": [
         {
           "delay": 0,
