@@ -21,14 +21,18 @@ document.addEventListener('DOMContentLoaded', function() {
     `;
     
     data.experience.jobs.forEach(job => {
-      const companyInfo = job.logo 
-        ? `<p><strong>${job.title}</strong> | ${job.company} <img src="${job.logo}" alt="${job.company}" class="company-logo"></p>`
-        : `<p><strong>${job.title}</strong> | ${job.company}</p>`;
+      const logoHtml = job.logo 
+        ? `<img src="${job.logo}" alt="${job.company}" class="company-logo">`
+        : '';
       
       html += `
         <h3>${job.period}</h3>
-        ${companyInfo}
+        <div class="job-item">
+          ${logoHtml}
+          <div class="job-content">
+            <p><strong>${job.title}</strong> | ${job.company}</p>
       `;
+      
       if (job.achievements && job.achievements.length > 0) {
         html += `<ul>`;
         job.achievements.forEach(achievement => {
@@ -36,6 +40,11 @@ document.addEventListener('DOMContentLoaded', function() {
         });
         html += `</ul>`;
       }
+      
+      html += `
+          </div>
+        </div>
+      `;
     });
     
     html += `
@@ -44,17 +53,26 @@ document.addEventListener('DOMContentLoaded', function() {
     `;
     
     data.education.degrees.forEach(degree => {
-      const universityInfo = degree.logo 
-        ? `<p><strong>${degree.degree}</strong> | ${degree.university} <img src="${degree.logo}" alt="${degree.university}" class="university-logo"></p>`
-        : `<p><strong>${degree.degree}</strong> | ${degree.university}</p>`;
+      const logoHtml = degree.logo 
+        ? `<img src="${degree.logo}" alt="${degree.university}" class="university-logo">`
+        : '';
       
       html += `
         <h3>${degree.period}</h3>
-        ${universityInfo}
+        <div class="degree-item">
+          ${logoHtml}
+          <div class="degree-content">
+            <p><strong>${degree.degree}</strong> | ${degree.university}</p>
       `;
+      
       if (degree.thesis) {
         html += `<p>${degree.thesis}</p>`;
       }
+      
+      html += `
+          </div>
+        </div>
+      `;
     });
     
     html += `
