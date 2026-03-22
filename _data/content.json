@@ -36,13 +36,13 @@
           "delay": 0,
           "name": "Linux kernel",
           "url": "https://lore.kernel.org/all/?q=zouyipeng",
-          "tech": "ARM64, C， Arch",
+          "tech": "ARM64,C,Arch",
           "description": "负责Linux kernel特性开发与项目维护"
         },
         {
           "delay": 0,
           "name": "某旗舰机项目",
-          "tech": "ARM64, kernel, c",
+          "tech": "ARM64,kernel,c",
           "description": "负责底软平台的特性开发、设计"
         }
       ]
@@ -85,13 +85,13 @@
           "delay": 0,
           "name": "Linux kernel",
           "url": "https://lore.kernel.org/all/?q=zouyipeng",
-          "tech": "ARM64, C， Arch",
+          "tech": "ARM64,C,Arch",
           "description": "Responsible for Linux kernel feature development and project maintenance"
         },
         {
           "delay": 0,
           "name": "Flagship Device Project",
-          "tech": "ARM64, kernel, C",
+          "tech": "ARM64,kernel,C",
           "description": "Responsible for feature development and design of the underlying software platform"
         }
       ]

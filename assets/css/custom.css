@@ -9,32 +9,51 @@ hr {
   margin: 0 0 10px;
 }
 
-/* Language Switch */
+/* Language Switch - Capsule Design */
 .lang-switch {
   margin-bottom: 20px;
   display: flex;
-  gap: 10px;
+  justify-content: center;
 }
 
-.lang-btn {
-  padding: 6px 16px;
+.lang-capsule {
+  display: flex;
+  background: #f8f8f8;
   border: 1px solid #e5e5e5;
-  background: #fff;
-  border-radius: 4px;
+  border-radius: 17px;
+  padding: 3px;
+  gap: 4px;
+  transition: all 0.3s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.lang-capsule:hover {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transform: translateY(-1px);
+}
+
+.lang-capsule-btn {
+  padding: 6px 12px;
+  border: none;
+  background: transparent;
+  border-radius: 14px;
   cursor: pointer;
   font-size: 13px;
+  font-weight: 500;
   color: #555;
   transition: all 0.3s ease;
+  outline: none;
 }
 
-.lang-btn:hover {
+.lang-capsule-btn:hover {
   background: #f0f0f0;
+  color: #333;
 }
 
-.lang-btn.active {
+.lang-capsule-btn.active {
   background: #267CB9;
   color: #fff;
-  border-color: #267CB9;
+  font-weight: 600;
 }
 
 

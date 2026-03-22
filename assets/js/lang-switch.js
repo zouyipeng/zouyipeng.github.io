@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-  const langButtons = document.querySelectorAll('.lang-btn');
+  const langButtons = document.querySelectorAll('.lang-capsule-btn');
   const zhElements = document.querySelectorAll('.lang-zh');
   const enElements = document.querySelectorAll('.lang-en');
 
