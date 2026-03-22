@@ -54,22 +54,18 @@
         }
       ]
     },
-    "highlights": {
-      "title": "个人成就",
+    "Highlights": {
+      "title": "Highlights",
       "items": [
         {
-          "title": "深度学习在图像识别中的应用",
+          "title": "Deep Learning Applications in Image Recognition",
           "journal": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
-          "year": "2024",
+          "year": "2018",
           "url": "https://example.com/paper"
         },
         {
-          "title": "全国大学生数学建模竞赛一等奖",
-          "year": "2023"
-        },
-        {
-          "title": "开源项目贡献者",
-          "description": "为多个知名开源项目贡献代码",
+          "title": "Open Source Contributor",
+          "description": "Contributed code to multiple well-known open source projects",
           "url": "https://github.com/zouyipeng"
         }
       ]
@@ -130,18 +126,14 @@
         }
       ]
     },
-    "highlights": {
-      "title": "Personal Achievements",
+    "Highlights": {
+      "title": "Highlights",
       "items": [
         {
           "title": "Deep Learning Applications in Image Recognition",
           "journal": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
-          "year": "2024",
+          "year": "2018",
           "url": "https://example.com/paper"
-        },
-        {
-          "title": "First Prize in National College Mathematical Modeling Competition",
-          "year": "2023"
         },
         {
           "title": "Open Source Contributor",

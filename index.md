@@ -71,14 +71,14 @@ document.addEventListener('DOMContentLoaded', function() {
     
     html += `</div>`;
     
-    if (data.highlights && data.highlights.items && data.highlights.items.length > 0) {
+    if (data.Highlights && data.Highlights.items && data.Highlights.items.length > 0) {
       html += `
         <hr>
-        <h2>${data.highlights.title}</h2>
+        <h2>${data.Highlights.title}</h2>
         <div class="highlights-section">
       `;
       
-      data.highlights.items.forEach(highlight => {
+      data.Highlights.items.forEach(highlight => {
         const titleHtml = highlight.url 
           ? `<h4><a href="${highlight.url}" target="_blank">${highlight.title}</a></h4>`
           : `<h4>${highlight.title}</h4>`;
