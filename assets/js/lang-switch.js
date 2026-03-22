@@ -30,21 +30,13 @@ document.addEventListener('DOMContentLoaded', function() {
     }, 50);
   }
 
-  toggleInput.addEventListener('change', (e) => {
+  toggleInput.addEventListener('change', function(e) {
     const lang = e.target.checked ? 'en' : 'zh';
     switchLanguage(lang);
   });
 
-  // Initialize with English (already set in HTML)
-  setTimeout(() => {
-    if (zhLabel) zhLabel.classList.remove('active');
-    if (enLabel) enLabel.classList.add('active');
-    zhElements.forEach(el => el.style.display = 'none');
-    enElements.forEach(el => el.style.display = 'block');
-    
-    // Trigger project animation
-    if (typeof triggerProjectAnimation === 'function') {
-      triggerProjectAnimation();
-    }
+  // Initialize with English
+  setTimeout(function() {
+    switchLanguage('en');
   }, 100);
 });
