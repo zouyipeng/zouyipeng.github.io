@@ -32,37 +32,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
   toggleInput.addEventListener('change', (e) => {
     const lang = e.target.checked ? 'en' : 'zh';
-  switchLanguage(lang);
+    switchLanguage(lang);
   });
 
   // Initialize with English
-  setTimeout(() => {
-    switchLanguage('en');
-  }, 100);
-});
-
-    if (lang === 'zh') {
-      zhElements.forEach(el => el.style.display = 'block');
-      enElements.forEach(el => el.style.display = 'none');
-    } else {
-      zhElements.forEach(el => el.style.display = 'none');
-      enElements.forEach(el => el.style.display = 'block');
-    }
-    
-    // Trigger project animation after language switch
-    setTimeout(() => {
-      if (typeof triggerProjectAnimation === 'function') {
-        triggerProjectAnimation();
-      }
-    }, 50);
-  }
-
-  langButtons.forEach(btn => {
-    btn.addEventListener('click', () => {
-      switchLanguage(btn.dataset.lang);
-    });
-  });
-
   setTimeout(() => {
     switchLanguage('en');
   }, 100);
