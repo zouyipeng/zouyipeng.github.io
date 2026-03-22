@@ -350,7 +350,7 @@ h4 {
 
 /* Company and University Logos */
 .company-logo, .university-logo {
-  height: 50px;
+  height: 40px;
   width: auto;
   display: block;
 }
@@ -431,7 +431,7 @@ h4 {
   }
   
   .company-logo, .university-logo {
-    height: 40px;
+    height: 32px;
     width: auto;
   }
   
