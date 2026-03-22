@@ -72,6 +72,13 @@ document.addEventListener('DOMContentLoaded', function() {
   
   renderContent('zh');
   renderContent('en');
+  
+  // Trigger project animation after content is rendered
+  setTimeout(() => {
+    if (typeof triggerProjectAnimation === 'function') {
+      triggerProjectAnimation();
+    }
+  }, 200);
 });
 </script>
 

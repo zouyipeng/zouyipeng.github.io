@@ -6,15 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        const projectCards = document.querySelectorAll('.project-card');
-        
-        projectCards.forEach(card => {
-          const delay = parseInt(card.getAttribute('data-delay')) || 0;
-          setTimeout(() => {
-            card.classList.add('visible');
-          }, delay);
-        });
-        
+        triggerProjectAnimation();
         observer.unobserve(entry.target);
       }
     });
@@ -23,4 +15,18 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   observer.observe(projectsSection);
+  
+  // Function to manually trigger project animation
+  window.triggerProjectAnimation = function() {
+    const projectCards = document.querySelectorAll('.project-card');
+    projectCards.forEach(card => {
+      const delay = parseInt(card.getAttribute('data-delay')) || 0;
+      setTimeout(() => {
+        card.classList.add('visible');
+      }, delay);
+    });
+  };
+  
+  // Initial trigger
+  triggerProjectAnimation();
 });
