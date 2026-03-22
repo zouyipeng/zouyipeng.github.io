@@ -25,10 +25,7 @@ hr {
   justify-content: center;
 }
 
-section {
-  touch-action: pan-y;
-  user-select: none;
-}
+
 
 .lang-label {
   font-size: 13px;
