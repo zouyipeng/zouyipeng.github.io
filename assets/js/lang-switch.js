@@ -5,13 +5,21 @@ document.addEventListener('DOMContentLoaded', function() {
   const zhLabel = document.querySelector('.zh-label');
   const enLabel = document.querySelector('.en-label');
 
-  if (!section) return;
+  console.log('Language switch initialized');
+  console.log('ZH elements:', zhElements.length);
+  console.log('EN elements:', enElements.length);
+
+  if (!section || !zhElements.length || !enElements.length) {
+    console.error('Missing required elements');
+    return;
+  }
 
   let isDragging = false;
   let startX = 0;
   let isEnglish = true;
 
   function updateLanguage(english) {
+    console.log('Switching to:', english ? 'English' : 'Chinese');
     isEnglish = english;
     
     if (english) {
@@ -34,10 +42,11 @@ document.addEventListener('DOMContentLoaded', function() {
     }, 50);
   }
 
-  // Mouse events
+  // Mouse events on section
   section.addEventListener('mousedown', function(e) {
     isDragging = true;
     startX = e.clientX;
+    console.log('Mouse down at:', startX);
   });
 
   document.addEventListener('mousemove', function(e) {
@@ -47,10 +56,12 @@ document.addEventListener('DOMContentLoaded', function() {
     const threshold = 50;
     
     if (deltaX > threshold) {
+      console.log('Swipe right detected');
       updateLanguage(true);
       isDragging = false;
       startX = e.clientX;
     } else if (deltaX < -threshold) {
+      console.log('Swipe left detected');
       updateLanguage(false);
       isDragging = false;
       startX = e.clientX;
@@ -61,23 +72,27 @@ document.addEventListener('DOMContentLoaded', function() {
     isDragging = false;
   });
 
-  // Touch events
+  // Touch events on section
   section.addEventListener('touchstart', function(e) {
     isDragging = true;
     startX = e.touches[0].clientX;
+    console.log('Touch start at:', startX);
   });
 
   section.addEventListener('touchmove', function(e) {
     if (!isDragging) return;
+    e.preventDefault();
     
     const deltaX = e.touches[0].clientX - startX;
     const threshold = 50;
     
     if (deltaX > threshold) {
+      console.log('Touch swipe right detected');
       updateLanguage(true);
       isDragging = false;
       startX = e.touches[0].clientX;
     } else if (deltaX < -threshold) {
+      console.log('Touch swipe left detected');
       updateLanguage(false);
       isDragging = false;
       startX = e.touches[0].clientX;
@@ -91,17 +106,20 @@ document.addEventListener('DOMContentLoaded', function() {
   // Click on labels
   if (zhLabel) {
     zhLabel.addEventListener('click', function() {
+      console.log('ZH label clicked');
       updateLanguage(false);
     });
   }
   
   if (enLabel) {
     enLabel.addEventListener('click', function() {
+      console.log('EN label clicked');
       updateLanguage(true);
     });
   }
 
   // Initialize with English
+  console.log('Initializing with English');
   setTimeout(function() {
     updateLanguage(true);
   }, 100);
