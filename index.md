@@ -56,9 +56,13 @@ document.addEventListener('DOMContentLoaded', function() {
     `;
     
     data.projects.items.forEach(project => {
+      const projectTitle = project.url 
+        ? `<h3><a href="${project.url}" target="_blank">${project.name}</a></h3>`
+        : `<h3>${project.name}</h3>`;
+      
       html += `
         <div class="project-card" data-delay="${project.delay}">
-          <h3><a href="${project.url}">${project.name}</a></h3>
+          ${projectTitle}
           <p class="project-tech">${project.tech}</p>
           <p>${project.description}</p>
         </div>
