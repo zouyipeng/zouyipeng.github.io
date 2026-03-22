@@ -6,23 +6,11 @@
       "title": "工作经历",
       "jobs": [
         {
-          "period": "2022 ~ 至今",
+          "period": "2018 ~ 至今",
           "title": "软件工程师",
-          "company": "[公司名称]",
+          "company": "华为",
           "achievements": [
-            "领导 Linux 嵌入式系统内核模块开发",
-            "优化内存管理算法，启动时间减少 30%",
-            "与跨职能团队协作进行系统架构设计"
-          ]
-        },
-        {
-          "period": "2018 ~ 2022",
-          "title": "初级软件工程师",
-          "company": "[前公司]",
-          "achievements": [
-            "开发 ARM 微控制器设备驱动程序",
-            "在自定义 RTOS 中实现实时任务调度",
-            "维护和调试现有固件代码库"
+            "Linux kernel"
           ]
         }
       ]
@@ -31,15 +19,9 @@
       "title": "教育背景",
       "degrees": [
         {
-          "period": "2016 ~ 2018",
-          "degree": "计算机科学硕士",
-          "university": "[大学名称]",
-          "thesis": "论文：\"资源受限环境中的高效内存管理\""
-        },
-        {
-          "period": "2012 ~ 2016",
-          "degree": "计算机科学学士",
-          "university": "[大学名称]"
+          "period": "2015 ~ 2018",
+          "degree": "计算机硕士",
+          "university": "西安电子科技大学"
         }
       ]
     },
@@ -48,24 +30,22 @@
       "items": [
         {
           "delay": 0,
-          "name": "项目名称 1",
-          "url": "https://github.com/zouyipeng/project1",
-          "tech": "C • Linux Kernel API • Make",
-          "description": "开发了用于与自定义硬件外设接口的内核模块。实现了中断处理和 DMA 传输机制。"
+          "name": "openEyes",
+          "url": "https://github.com/zouyipeng/openEyes",
+          "tech": "vibe coding, clawer",
+          "description": "一个互联网信息收集与整合平台，通过网页（支持移动端）每日整合展示来自多个信息源的内容，并使用 AI 进行智能总结。"
         },
         {
-          "delay": 150,
-          "name": "项目名称 2",
-          "url": "https://github.com/zouyipeng/project2",
-          "tech": "C • Assembly • ARM Architecture",
-          "description": "为 ARM Cortex-M4 从零构建轻量级 RTOS。功能包括任务调度、信号量同步和内存保护。"
+          "delay": 0,
+          "name": "Linux kernel",
+          "tech": "ARM64, C， Arch",
+          "description": "负责Linux kernel特性开发与项目维护"
         },
         {
-          "delay": 300,
-          "name": "项目名称 3",
-          "url": "https://github.com/zouyipeng/project3",
-          "tech": "C++ • MQTT • FreeRTOS",
-          "description": "为分布式嵌入式系统创建了监控框架。实现了实时数据收集和远程遥测。"
+          "delay": 0,
+          "name": "某旗舰机项目",
+          "tech": "ARM64, kernel, c",
+          "description": "负责底软平台的特性开发、设计"
         }
       ]
     }
@@ -77,23 +57,11 @@
       "title": "Professional Experience",
       "jobs": [
         {
-          "period": "2022 ~ Present",
+          "period": "2018 ~ Present",
           "title": "Software Engineer",
-          "company": "[Company Name]",
+          "company": "Huawei",
           "achievements": [
-            "Led development of kernel modules for Linux-based embedded systems",
-            "Optimized memory management algorithms, reducing boot time by 30%",
-            "Collaborated with cross-functional teams on system architecture design"
-          ]
-        },
-        {
-          "period": "2018 ~ 2022",
-          "title": "Junior Software Engineer",
-          "company": "[Previous Company]",
-          "achievements": [
-            "Developed device drivers for ARM-based microcontrollers",
-            "Implemented real-time task scheduling in custom RTOS",
-            "Maintained and debugged existing firmware codebase"
+            "Linux kernel"
           ]
         }
       ]
@@ -102,15 +70,9 @@
       "title": "Educational Background",
       "degrees": [
         {
-          "period": "2016 ~ 2018",
-          "degree": "Master of Science in Computer Science",
-          "university": "[University Name]",
-          "thesis": "Thesis: \"Efficient Memory Management in Resource-Constrained Environments\""
-        },
-        {
-          "period": "2012 ~ 2016",
-          "degree": "Bachelor of Science in Computer Science",
-          "university": "[University Name]"
+          "period": "2015 ~ 2018",
+          "degree": "Master of Computer Science",
+          "university": "Xidian University"
         }
       ]
     },
@@ -119,24 +81,22 @@
       "items": [
         {
           "delay": 0,
-          "name": "Project Name 1",
-          "url": "https://github.com/zouyipeng/project1",
-          "tech": "C • Linux Kernel API • Make",
-          "description": "Developed a kernel module for interfacing with custom hardware peripherals. Implemented interrupt handling and DMA transfer mechanisms."
+          "name": "openEyes",
+          "url": "https://github.com/zouyipeng/openEyes",
+          "tech": "vibe coding, crawler",
+          "description": "An internet information collection and integration platform that aggregates and displays content from multiple sources daily through web pages (supports mobile), with AI-powered intelligent summarization."
         },
         {
-          "delay": 150,
-          "name": "Project Name 2",
-          "url": "https://github.com/zouyipeng/project2",
-          "tech": "C • Assembly • ARM Architecture",
-          "description": "Built a lightweight RTOS from scratch for ARM Cortex-M4. Features include task scheduling, semaphore synchronization, and memory protection."
+          "delay": 0,
+          "name": "Linux kernel",
+          "tech": "ARM64, C， Arch",
+          "description": "Responsible for Linux kernel feature development and project maintenance"
         },
         {
-          "delay": 300,
-          "name": "Project Name 3",
-          "url": "https://github.com/zouyipeng/project3",
-          "tech": "C++ • MQTT • FreeRTOS",
-          "description": "Created a monitoring framework for distributed embedded systems. Implemented real-time data collection and remote telemetry."
+          "delay": 0,
+          "name": "Flagship Device Project",
+          "tech": "ARM64, kernel, C",
+          "description": "Responsible for feature development and design of the underlying software platform"
         }
       ]
     }

@@ -2,12 +2,14 @@
 
 ## Project Overview
 
-This is the Jekyll Theme Minimal - a GitHub Pages theme written in Ruby and SCSS. The project uses:
+This is the Jekyll Theme Minimal - a GitHub Pages theme written in
+Ruby and SCSS. The project uses:
 - **Ruby** (>= 2.4.0) for build tooling
-- **Jekyll** for static site generation
+- **Jekyll** (> 3.5, < 5.0) for static site generation
 - **SCSS** for stylesheets
-- **HTMLProofer** for testing rendered HTML
+- **HTMLProofer** for testing rendered HTML (currently disabled due to Ruby 4.0.1 compatibility)
 - **RuboCop** for Ruby linting (using rubocop-github)
+- **w3c_validators** for HTML validation (currently disabled due to Ruby 4.0.1 compatibility)
 
 ---
 
@@ -75,6 +77,8 @@ Note: Bump version in `jekyll-theme-minimal.gemspec` before publishing.
   - `_sass/rouge-github.scss` - syntax highlighting
 - Use SCSS variables for colors and spacing
 - Keep styles modular and component-based
+- Use 2-space indentation (SCSS convention)
+- Prefer CSS custom properties (variables) for themeable values
 
 ### File Organization
 ```
