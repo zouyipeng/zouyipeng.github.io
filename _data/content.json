@@ -29,10 +29,10 @@
       "items": [
         {
           "delay": 0,
-          "name": "openEyes",
-          "url": "https://github.com/zouyipeng/openEyes",
+          "name": "kernel-tracker",
+          "url": "https://github.com/zouyipeng/kernel-tracker.github.io",
           "tech": "vibe coding",
-          "description": "一个互联网信息收集与整合平台，通过网页（支持移动端）每日整合展示来自多个信息源的内容，并使用 AI 进行智能总结。"
+          "description": "一个Linux Kernel信息收集与整合平台，通过网页（支持移动端）每日整合展示来自多个信息源的内容，并使用 AI 进行智能总结。"
         },
         {
           "delay": 0,
@@ -104,10 +104,10 @@
       "items": [
         {
           "delay": 0,
-          "name": "openEyes",
-          "url": "https://github.com/zouyipeng/openEyes",
+          "name": "kernel-tracker",
+          "url": "https://github.com/zouyipeng/kernel-tracker.github.io",
           "tech": "vibe coding",
-          "description": "An internet information collection and integration platform that aggregates and displays content from multiple sources daily through web pages (supports mobile), with AI-powered intelligent summarization."
+          "description": "An Linux Kernel information collection and integration platform that aggregates and displays content from multiple sources daily through web pages (supports mobile), with AI-powered intelligent summarization."
         },
         {
           "delay": 0,
